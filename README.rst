@@ -1,3 +1,8 @@
+Maintenance
+===========
+
+❗ This project is released as-is, and is not actively maintained by Civis Analytics.
+
 civis-compute
 =============
 
