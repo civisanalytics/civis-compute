@@ -146,7 +146,7 @@ Available CLI Utilities
 -----------------------
 
 ``civis-compute submit``
-----------------------
+------------------------
 
 To submit a local bash, python script, R script or jupyter notebook to Civis Platform, you can simply type::
 
@@ -236,7 +236,7 @@ This command prints out the container config and command to be run. This feature
 to help debug scripts before they run on Civis Platform.
 
 ``civis-compute get``
--------------------
+---------------------
 
 To get the outputs of a script which has finished::
 
@@ -255,7 +255,7 @@ To specify a specific run::
     civis-compute get SCRIPTID --run-id=RUNID
 
 ``civis-compute status``
-----------------------
+------------------------
 
 To view scripts that are running (and you have permissions to view)::
 
@@ -276,7 +276,7 @@ Note that only container scripts are listed by ``civis-compute status``, up
 to ~50 scripts.
 
 ``civis-compute cancel``
-----------------------
+------------------------
 
 To cancel a script running on Civis Platform::
 
@@ -289,7 +289,7 @@ Note that only containers which you are running (i.e., ``running_as`` is set you
 command will cancel both hidden and non-hidden scripts.
 
 ``civis-compute cache``
----------------------
+-----------------------
 
 The civis-compute CLI can cache the MD5 checksums and files endpoint IDs of your files to avoid uploading
 them more than once.
