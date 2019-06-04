@@ -44,7 +44,7 @@ def _parse_options_from_file(fp):
                                  "'#CIVIS key = value'!")
 
             # now parse the results with yaml
-            params[items[0]] = yaml.load(items[1])
+            params[items[0]] = yaml.safe_load(items[1])
 
     return params
 
