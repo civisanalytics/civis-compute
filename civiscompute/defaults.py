@@ -25,6 +25,6 @@ def get_defaults():
     config_loc = os.path.expanduser('~/.civiscompute/config.yml')
     if os.path.exists(config_loc):
         with open(config_loc, 'r') as fp:
-            defaults.update(yaml.load(fp))
+            defaults.update(yaml.safe_load(fp))
 
     return defaults

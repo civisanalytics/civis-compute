@@ -29,7 +29,7 @@ class YAMLParamType(click.ParamType):
             return value
 
         try:
-            result = yaml.load(value)
+            result = yaml.safe_load(value)
             return result
         except Exception:
             self.fail(
